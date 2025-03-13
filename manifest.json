@@ -1,0 +1,12 @@
+{
+        "manifest_version": 3,
+        "name": "AI-Generated Dark Mode",
+        "version": "1.0",
+        "description": "An AI-generated extension for dark mode.",
+        "permissions": ["storage"],
+        "content_scripts": [{
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }]
+    }
